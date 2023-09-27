@@ -237,7 +237,7 @@ const setting = db.settings[botNumber]
     		if (!isNumber(setting.status)) setting.status = 0
     		if (!('autobio' in setting)) setting.autobio = false
 	    } else global.db.settings[botNumber] = {
-    	    anticall: true,
+    	    anticall: false,
     		status: 0,
     		autobio: false
 	    }
